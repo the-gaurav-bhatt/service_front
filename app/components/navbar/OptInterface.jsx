@@ -19,7 +19,7 @@ const OptInterface = ({ emal, setOtpInterface, setForgetPassword }) => {
     setPassLoading(true);
     try {
       const res = await fetch(
-        'https://a-pathshala-service-2.onrender.com/api/v1/user/resetPassword',
+        process.env.NEXT_PUBLIC_BACKEND + process.env.NEXT_PUBLIC_RESETPASSWORD,
         {
           method: 'POST',
           body: JSON.stringify({

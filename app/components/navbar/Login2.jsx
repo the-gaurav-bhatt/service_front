@@ -80,7 +80,8 @@ const Login2 = () => {
 
     try {
       const res = await fetch(
-        'https://a-pathshala-service-2.onrender.com/api/v1/user/forgetPassword',
+        process.env.NEXT_PUBLIC_BACKEND +
+          process.env.NEXT_PUBLIC_FORGOTPASSWORD,
         {
           method: 'POST',
           body: JSON.stringify({
