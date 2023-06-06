@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 const getCourse = async (id) => {
   const res = await fetch(
-    `https://a-pathshala-service-2.onrender.com/api/v1/course/getCourseMetaData`,
+    process.env.NEXT_PUBLIC_BACKEND + process.env.NEXT_PUBLIC_COURSEMETA,
     {
       method: 'POST',
       headers: {
