@@ -1,5 +1,4 @@
 import React from 'react';
-import Benefits from '../components/becomeTeacher/Benifits';
 // import CreateCourse from '../components/becomeTeacher/CreateCourse';
 
 const layout = ({ children }) => {
