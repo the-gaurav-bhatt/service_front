@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 function NavLink({ href, label, disable }) {
-  const selected = 'text-blue-500';
+  const selected = 'text-blue-500 text-base ';
   const others = 'hover:text-gray-900 px-2 rounded-md text-sm font-bold';
 
   const currRoute = usePathname();
@@ -20,7 +20,7 @@ function NavLink({ href, label, disable }) {
           href={href}
           className={` ${currRoute === href ? selected : others}${
             disable ? ' cursor-not-allowed  ' : ' '
-          } hover:border-b-4 pb-1 hover:text-blue-500 hover:rounded-sm hover:border-blue-500`}
+          } hover:border-b-4 pb-1  hover:text-blue-500 hover:rounded-sm hover:border-blue-500`}
         >
           {label}
         </Link>

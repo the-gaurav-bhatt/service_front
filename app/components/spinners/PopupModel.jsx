@@ -91,9 +91,9 @@ export default function ModalActionButton({ heading, content, setShowing }) {
           ? ReactDOM.createPortal(
               <div
                 className="fixed top-0 left-0 z-20 flex h-screen w-screen items-center justify-center bg-slate-300/20 backdrop-blur-sm"
-                aria-labelledby="header-2a content-2a"
-                aria-modal="true"
-                tabindex="-1"
+                ariaLabelledby="header-2a content-2a"
+                ariaModal="true"
+                tabIndex="-1"
                 role="dialog"
               >
                 {/*    <!-- Modal --> */}
@@ -111,7 +111,7 @@ export default function ModalActionButton({ heading, content, setShowing }) {
                     <button
                       onClick={() => setIsShowing(false)}
                       className="inline-flex h-10 items-center justify-center gap-2 justify-self-center whitespace-nowrap rounded-full px-5 text-sm font-medium tracking-wide  text-green-500 transition duration-300 hover:bg-green-100 hover:text-green-600 focus:bg-green-200 focus:text-green-700 focus-visible:outline-none disabled:cursor-not-allowed disabled:text-green-300 disabled:shadow-none disabled:hover:bg-transparent"
-                      aria-label="close dialog"
+                      ariaLabel="close dialog"
                     >
                       <span className="relative only:-mx-5">
                         <svg
@@ -122,7 +122,7 @@ export default function ModalActionButton({ heading, content, setShowing }) {
                           stroke="currentColor"
                           strokeWidth="1.5"
                           role="graphics-symbol"
-                          aria-labelledby="title-79 desc-79"
+                          ariaLabelledby="title-79 desc-79"
                         >
                           <title id="title-79">Icon title</title>
                           <desc id="desc-79">

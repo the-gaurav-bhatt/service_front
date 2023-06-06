@@ -67,13 +67,13 @@ const ContactPage = () => {
     }
   };
   return (
-    <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-      <div class="max-w-2xl lg:max-w-5xl mx-auto">
-        <div class="text-center">
-          <h1 class="text-3xl font-bold text-gray-800 sm:text-4xl ">
+    <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+      <div className="max-w-2xl lg:max-w-5xl mx-auto">
+        <div className="text-center">
+          <h1 className="text-3xl font-bold text-gray-800 sm:text-4xl ">
             Contact us
           </h1>
-          <p class="mt-1 text-gray-600 ">
+          <p className="mt-1 text-gray-600 ">
             We&apos;d love to talk about how we can help you.
           </p>
         </div>
@@ -84,9 +84,9 @@ const ContactPage = () => {
             <ErrorMessage message={'Something Went Wrong, Try again Later'} />
           )
         )}
-        <div class="mt-12 grid items-center lg:grid-cols-2 gap-6 lg:gap-16">
-          <div class="flex flex-col border rounded-xl p-4 sm:p-6 lg:p-8 ">
-            <h2 class="mb-8 text-xl font-semibold text-gray-800 ">
+        <div className="mt-12 grid items-center lg:grid-cols-2 gap-6 lg:gap-16">
+          <div className="flex flex-col border rounded-xl p-4 sm:p-6 lg:p-8 ">
+            <h2 className="mb-8 text-xl font-semibold text-gray-800 ">
               Fill in the form
             </h2>
 
@@ -171,24 +171,24 @@ const ContactPage = () => {
                 <button
                   type="submit"
                   disabled={loading}
-                  class="inline-flex justify-center items-center gap-x-3 text-center bg-blue-600 hover:bg-blue-700 border border-transparent text-sm lg:text-base text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4"
+                  className="inline-flex justify-center items-center gap-x-3 text-center bg-blue-600 hover:bg-blue-700 border border-transparent text-sm lg:text-base text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4"
                 >
                   {loading ? <BounceSpinners /> : 'Send inquiry'}
                 </button>
               </div>
 
-              <div class="mt-3 text-center">
-                <p class="text-sm text-gray-500">
+              <div className="mt-3 text-center">
+                <p className="text-sm text-gray-500">
                   We&apos;ll get back to you in 1-2 business days.
                 </p>
               </div>
             </form>
           </div>
 
-          <div class="divide-y divide-gray-200 ">
-            <div class="flex gap-x-7 py-6">
+          <div className="divide-y divide-gray-200 ">
+            <div className="flex gap-x-7 py-6">
               <svg
-                class="flex-shrink-0 w-6 h-6 mt-1.5 text-gray-800 "
+                className="flex-shrink-0 w-6 h-6 mt-1.5 text-gray-800 "
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="16"
@@ -199,17 +199,17 @@ const ContactPage = () => {
                 <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z" />
               </svg>
               <div>
-                <h3 class="font-semibold text-gray-800 ">Knowledgebase</h3>
-                <p class="mt-1 text-sm text-gray-500">
+                <h3 className="font-semibold text-gray-800 ">Knowledgebase</h3>
+                <p className="mt-1 text-sm text-gray-500">
                   We&apos;re here to help with any questions or code.
                 </p>
                 <a
-                  class="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800  -200"
+                  className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800  -200"
                   href="#"
                 >
                   Contact support
                   <svg
-                    class="w-2.5 h-2.5 transition ease-in-out group-hover:translate-x-1"
+                    className="w-2.5 h-2.5 transition ease-in-out group-hover:translate-x-1"
                     width="16"
                     height="16"
                     viewBox="0 0 16 16"
@@ -227,9 +227,9 @@ const ContactPage = () => {
               </div>
             </div>
 
-            <div class="flex gap-x-7 py-6">
+            <div className="flex gap-x-7 py-6">
               <svg
-                class="flex-shrink-0 w-6 h-6 mt-1.5 text-gray-800 "
+                className="flex-shrink-0 w-6 h-6 mt-1.5 text-gray-800 "
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="16"
@@ -240,17 +240,17 @@ const ContactPage = () => {
                 <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
               </svg>
               <div>
-                <h3 class="font-semibold text-gray-800 ">FAQ</h3>
-                <p class="mt-1 text-sm text-gray-500">
+                <h3 className="font-semibold text-gray-800 ">FAQ</h3>
+                <p className="mt-1 text-sm text-gray-500">
                   Search our FAQ for answers to anything you might ask.
                 </p>
                 <button
                   onClick={handleFAQopen}
-                  class="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 "
+                  className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 "
                 >
                   Visit FAQ
                   <svg
-                    class="w-2.5 h-2.5 transition ease-in-out group-hover:translate-x-1"
+                    className="w-2.5 h-2.5 transition ease-in-out group-hover:translate-x-1"
                     width="16"
                     height="16"
                     viewBox="0 0 16 16"
@@ -269,9 +269,9 @@ const ContactPage = () => {
             </div>
             {openFAQ && <CourseFAQ />}
 
-            <div class=" flex gap-x-7 py-6">
+            <div className=" flex gap-x-7 py-6">
               <svg
-                class="flex-shrink-0 w-6 h-6 mt-1.5 text-gray-800 "
+                className="flex-shrink-0 w-6 h-6 mt-1.5 text-gray-800 "
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
                 height="16"
@@ -281,14 +281,14 @@ const ContactPage = () => {
                 <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
               </svg>
               <div>
-                <h3 class="font-semibold text-gray-800 ">
+                <h3 className="font-semibold text-gray-800 ">
                   Contact us by email
                 </h3>
-                <p class="mt-1 text-sm text-gray-500">
+                <p className="mt-1 text-sm text-gray-500">
                   If you wish to write us an email instead please use
                 </p>
                 <a
-                  class="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 "
+                  className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 "
                   href="#"
                 >
                   bhattgaurav6654@gmail.com

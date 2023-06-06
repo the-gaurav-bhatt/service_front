@@ -9,12 +9,7 @@ import { useContext, useEffect, useState } from 'react';
 import Profile from './Profile';
 import { useRouter } from 'next/navigation';
 import { userContext, cookieContext } from '@/app/layout';
-// async function getUserData() {
-//   const res = await fetch(
-//     'https://a-pathshala-service-2.onrender.com/api/v1/student/login'
-//   );
-//   return res.json();
-// }
+
 export default function Navbar() {
   const { setUser } = useContext(userContext);
   // console.log(cookie);
@@ -57,14 +52,8 @@ export default function Navbar() {
     "
     >
       <Logo />
-      {/* {currentUrl != '/courses' && <SearchBar />} */}
-      {/* <Link
-        href={'/become-teacher'}
-        className="text-3xl px-2 rounded-md shadow-lg whitespace-nowrap font-bold text-primary-600"
-      >
-        Become Teacher
-      </Link> */}
-      <NavItems />
+
+      <NavItems isLoggedIn={isLoggedIn} />
 
       {!isLoggedIn && <CallToAction />}
 
@@ -108,30 +97,7 @@ export default function Navbar() {
               >
                 View Profile
               </Link>
-              {/* <Link
-                href="#"
-                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-              >
-                My Cart
-              </Link>
-              <Link
-                href="#"
-                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-              >
-                Wishlist
-              </Link>
-              <Link
-                href="#"
-                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-              >
-                Saved
-              </Link>
-              <Link
-                href="#"
-                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-              >
-                Courses
-              </Link> */}
+
               {isLoggedIn && (
                 <button
                   onClick={handleLogout}
