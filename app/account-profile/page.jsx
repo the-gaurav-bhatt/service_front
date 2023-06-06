@@ -1,13 +1,11 @@
 'use client';
 import { cookieContext, userContext } from '../layout';
-import { courseContext } from '../become-teacher/create-course/page';
 import React, { useContext, useEffect } from 'react';
-import SideBar from '../components/profileSection/SideBar';
 const GetProfileData = async () => {
   const { user } = useContext(userContext);
   const { cookie } = useContext(cookieContext);
   const res = await fetch(
-    'https://a-pathshala-service-2.onrender.com/api/v1/user/profile',
+    process.env.NEXT_PUBLIC_BACKEND + process.env.NEXT_PUBLIC_PROFILE,
     {
       method: 'POST', // Specify the method as POST
       headers: {
