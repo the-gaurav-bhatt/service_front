@@ -50,7 +50,8 @@ const OptInterface = ({ emal, setOtpInterface, setForgetPassword }) => {
     setLoading(true);
     try {
       const res = await fetch(
-        'https://a-pathshala-service-2.onrender.com/api/v1/user/verifyToken',
+        process.env.NEXT_PUBLIC_BACKEND + process.env.NEXT_PUBLIC_VERIFYTOKEN,
+
         {
           method: 'POST',
           body: JSON.stringify({

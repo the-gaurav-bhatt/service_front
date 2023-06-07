@@ -12,20 +12,11 @@ const SideBar = () => {
   const router = useRouter();
   const currRoute = usePathname();
   const handleClick = async () => {
-    try {
-      const res = await fetch(
-        'https://a-pathshala-service-2.onrender.com/api/v1/student/logout'
-      );
-      if (res.ok) {
-        // setIsLoggedIn(false);
-        setUser({});
-        setCookie(null);
-        // setToggleProfile(false);
-        router.push('/');
-      }
-    } catch (error) {
-      console.log(error);
-    }
+    setIsLoggedIn(false);
+    setUser({});
+    setCookie(null);
+    setToggleProfile(false);
+    router.push('/');
   };
 
   const selected =

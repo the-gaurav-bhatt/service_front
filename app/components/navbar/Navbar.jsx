@@ -31,18 +31,11 @@ export default function Navbar() {
     setToggleProfile(!toggleProfile);
   };
   const handleLogout = async () => {
-    try {
-      const res = await fetch(process.env.BACKEND + process.env.LOGOUT);
-      if (res.ok) {
-        setIsLoggedIn(false);
-        setUser({});
-        setCookie(null);
-        setToggleProfile(false);
-        router.push('/');
-      }
-    } catch (error) {
-      console.log(error);
-    }
+    setIsLoggedIn(false);
+    setUser({});
+    setCookie(null);
+    setToggleProfile(false);
+    router.push('/');
   };
 
   return (
