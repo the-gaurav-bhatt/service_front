@@ -61,7 +61,11 @@ const Footer = () => {
                   </g>
                 </svg>
               </Link>
-              <Link href="#" className="text-gray-200 hover:text-white">
+              <Link
+                href="https://github.com/apluspathshala"
+                target="_blank"
+                className="text-gray-200 hover:text-white"
+              >
                 <svg
                   className="w-10 h-10"
                   xmlns="http://www.w3.org/2000/svg"
@@ -79,6 +83,7 @@ const Footer = () => {
                 </svg>
               </Link>
               <Link
+                target="_blank"
                 href="https://twitter.com/apluspathshala?t=ZimoXW8ldcF2rKxgYUOTSg&s=09"
                 className="text-gray-200 hover:text-white"
               >
@@ -102,7 +107,8 @@ const Footer = () => {
                 </svg>
               </Link>
               <Link
-                href="https://www.facebook.com/apluspathshala?mibextid=ZbWKwL"
+                target="_blank"
+                href="https://www.facebook.com/apluspathshala1/"
                 className="text-gray-200 hover:text-white"
               >
                 <svg
