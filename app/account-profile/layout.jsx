@@ -2,7 +2,7 @@
 import React from 'react';
 import SideBar from '../components/profileSection/SideBar';
 import { useContext } from 'react';
-import { userContext } from '../layout';
+import { userContext } from '../userProvider';
 const Layout = ({ children }) => {
   const { user } = useContext(userContext);
   if (!user?._id) {

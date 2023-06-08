@@ -3,7 +3,8 @@ import React, { useContext, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import BounceSpinners from '../spinners/BounceSpinners';
-import { cookieContext, userContext } from '@/app/layout';
+import { userContext } from '@/app/userProvider';
+import { cookieContext } from '@/app/cookieProviders';
 import OptInterface from './OptInterface';
 const Login2 = () => {
   // const { setCookie } = useContext(cookieContext);

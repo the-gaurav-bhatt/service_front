@@ -2,7 +2,7 @@
 
 import CheckoutSummary from '@/app/components/checkoutSection/CourseSummary';
 import CheckoutPage1 from '@/app/components/checkoutSection/Payment1';
-import { userContext } from '@/app/layout';
+import { userContext } from '@/app/userProvider';
 import ModalActionButton from '@/app/components/spinners/PopupModel';
 // import { useRouter } from 'next/navigation';
 import React, { useContext } from 'react';

@@ -8,7 +8,8 @@ import { usePathname } from 'next/navigation';
 import { useContext, useEffect, useState } from 'react';
 import Profile from './Profile';
 import { useRouter } from 'next/navigation';
-import { userContext, cookieContext } from '@/app/layout';
+import { userContext } from '@/app/userProvider';
+import { cookieContext } from '@/app/cookieProviders';
 
 export default function Navbar() {
   const { setUser } = useContext(userContext);

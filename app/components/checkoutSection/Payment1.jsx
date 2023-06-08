@@ -1,5 +1,6 @@
 'use client';
-import { cookieContext, userContext } from '@/app/layout';
+import { userContext } from '@/app/userProvider';
+import { cookieContext } from '@/app/cookieProviders';
 import axios from 'axios';
 import React, { useContext, useState } from 'react';
 import BounceSpinners from '../spinners/BounceSpinners';

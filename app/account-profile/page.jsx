@@ -1,5 +1,6 @@
 'use client';
-import { cookieContext, userContext } from '../layout';
+import { cookieContext } from '../cookieProviders';
+import { userContext } from '../userProvider';
 import React, { useContext, useEffect } from 'react';
 const GetProfileData = async () => {
   const { user } = useContext(userContext);

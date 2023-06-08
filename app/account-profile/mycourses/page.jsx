@@ -1,5 +1,5 @@
 'use client';
-import { userContext } from '@/app/layout';
+import { userContext } from '@/app/userProvider';
 import React from 'react';
 import { useContext } from 'react';
 import { useRouter } from 'next/navigation';
@@ -31,7 +31,7 @@ const Page = () => {
       id: 1,
       name: '15 Day Bootcamp on Tech Industry',
       instructor: 'Beginner to Intermediate',
-      image: '/banner.jpeg',
+      image: '/banner.png',
       upcomingSession: 'June 15th, 2023 - 08:00 PM',
     },
   ];

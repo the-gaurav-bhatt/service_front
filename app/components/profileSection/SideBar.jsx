@@ -1,9 +1,9 @@
 'use client';
 import Link from 'next/link';
-import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { usePathname } from 'next/navigation';
-import { cookieContext, userContext } from '@/app/layout';
+import { userContext } from '@/app/userProvider';
+import { cookieContext } from '@/app/cookieProviders';
 import { useContext } from 'react';
 
 const SideBar = () => {
@@ -12,10 +12,8 @@ const SideBar = () => {
   const router = useRouter();
   const currRoute = usePathname();
   const handleClick = async () => {
-    setIsLoggedIn(false);
     setUser({});
     setCookie(null);
-    setToggleProfile(false);
     router.push('/');
   };
 

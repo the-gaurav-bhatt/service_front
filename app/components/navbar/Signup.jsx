@@ -2,7 +2,8 @@
 import { useContext, useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { userContext, cookieContext } from '@/app/layout';
+import { userContext } from '@/app/userProvider';
+import { cookieContext } from '@/app/cookieProviders';
 import BounceSpinners from '../spinners/BounceSpinners';
 import SuccessMessage from '../spinners/SuccessMessage';
 const Signup = () => {

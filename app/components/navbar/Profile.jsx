@@ -1,8 +1,7 @@
 'use client';
 import React, { useContext } from 'react';
 import Image from 'next/image';
-import { userContext } from '@/app/layout';
-// import { useRouter } from 'next/navigation';
+import { userContext } from '@/app/userProvider';
 const Profile = ({ data }) => {
   const { user } = useContext(userContext);
   // const router = useRouter();
