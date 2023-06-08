@@ -24,7 +24,7 @@ const CourseFAQ = () => {
       question:
         'Are there any job placement opportunities after completing the A+ Pathshala program?',
       answer:
-        'A+ Pathshala provides career guidance and support, including job placement assistance. The program aims to equip you with the necessary skills and knowledge to pursue various career opportunities in the software development industry, increasing your chances of securing a rewarding job.',
+        'A+ Pathshala gurantess 100% job placement based on the A+ Score You Have. More detail can be found in the A+ Score section.',
     },
   ];
 

@@ -96,7 +96,7 @@ const CourseTeachers = () => {
       intro:
         ' Dilli Raj Timalsina is a co-founder and the CTO of A+ Pathshala. He is an open-source enthusiast and has set his sights on participating in the Google Summer of Code (GSOC) in 2024.',
       qualifications: ['Open Source Enthusiast', 'Target GSOC-2024'],
-      image: '/avatar.avif',
+      image: '/profiles/dilli.png',
     },
   ];
 

@@ -15,7 +15,7 @@ const UpcomingCourses = () => {
       'Nishant Phuyal',
       'Whole A+ Team',
     ],
-    image: '/banner.jpeg',
+    image: '/banner.png',
     description:
       'Join this comprehensive computer science and technology course to gain mastery from the fundamentals to industry insights. Discover the diverse domains of computer science, theory and foundational subjects, programming language selection, company creation and operation, startup strategies, software development, competitive programming, JavaScript essentials, open-source contribution, hiring processes, global opportunities, freelancing, cybersecurity, and much more. Learn from experienced instructors and industry professionals, and unleash your potential in the world of computer science and technology.',
 

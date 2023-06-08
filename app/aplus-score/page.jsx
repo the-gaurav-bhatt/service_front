@@ -8,7 +8,7 @@ import {
 import { IoIosRocket } from 'react-icons/io';
 const HomePage = () => {
   return (
-    <div className="w-[100vw]">
+    <div className="w-full">
       <header className="bg-blue-500 py-6 text-white text-center">
         <h1 className="text-4xl font-bold">Welcome to A+ Pathshala</h1>
         <p className="mt-4 text-lg">Unlock Your Potential with A+ Score</p>
@@ -188,8 +188,8 @@ const HomePage = () => {
               <svg
                 fill="#0092E4"
                 className="w-16 h-16 mr-3"
-                width="800px"
-                height="800px"
+                width="100px"
+                height="100px"
                 viewBox="0 -64 640 640"
                 xmlns="http://www.w3.org/2000/svg"
               >
