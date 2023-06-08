@@ -16,7 +16,7 @@ const Checkout = ({ course }) => {
           <source src="/video.mp4" type="video/mp4" />
         </video> */}
       </div>
-      <YouTubeVideo videoId={'GnodscC2p-A'} />
+      <YouTubeVideo videoId={'NE0dWeV5epA'} />
       <div className="rounded-lg shadow-lg overflow-hidden">
         <div className="flex items-center justify-between p-4">
           <div className="flex items-center">
