@@ -71,7 +71,7 @@ const CourseContent = () => {
                         d="M6.788 5.363a1 1 0 011.035.068l2.5 1.75a1 1 0 010 1.638l-2.5 1.75A1 1 0 016.25 9.75v-3.5a1 1 0 01.538-.887z"
                       ></path>
                     </svg>
-                    {showVideo && <YouTubeVideo videoId={'GnodscC2p-A'} />}
+                    {showVideo && <YouTubeVideo videoId={'NE0dWeV5epA'} />}
                     {video.free ? (
                       <button
                         onClick={() => setShowVideo(!showVideo)}
