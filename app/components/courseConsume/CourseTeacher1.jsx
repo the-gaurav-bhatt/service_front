@@ -1,12 +1,13 @@
 import React from 'react';
 import { Inter } from 'next/font/google';
+import Image from 'next/image';
 const inter = Inter({ subsets: ['latin'] });
 const CourseTeachers = () => {
   const team = [
     {
       name: 'Jiwan Bhattarai',
       intro:
-        'He is an experienced network security engineer with 10+ years of industry experience and expertise in various certifications such as CCIE #60261, CCNA, CCNP Security, CEH, Cisco FTD, ISE, ASA, and SD-WAN. He excels in ensuring secure network infrastructures.',
+        'He is an experienced network security engineer with 14+ years of industry experience and expertise in various certifications such as CCIE #60261, CCNA, CCNP Security, CEH, Cisco FTD, ISE, ASA, and SD-WAN. He excels in ensuring secure network infrastructures.',
       socialMedia: [
         {
           platform: 'LinkedIn',
@@ -160,10 +161,12 @@ const CourseTeachers = () => {
             className="flex flex-col rounded-xl p-4 md:p-3 bg-white border border-gray-200"
           >
             <div className="flex items-center gap-x-4">
-              <img
+              <Image
+                width={100}
+                height={100}
                 className="rounded-full w-24 h-24"
                 src={member.image}
-                alt="Image Description"
+                alt={`${member.name} profile picture`}
               />
               <div className="flex-grow">
                 <h3 className="font-bold text-gray-900 text-lg">
