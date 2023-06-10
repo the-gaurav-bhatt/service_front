@@ -16,6 +16,7 @@ const CheckoutPage1 = () => {
     name: '',
     email: '',
     phone: '',
+    referalCode: ''
   });
   const [image, setImage] = useState(null);
   let formData = new FormData();
@@ -36,6 +37,7 @@ const CheckoutPage1 = () => {
     formData.append('name', formdata.name);
     formData.append('email', formdata.email);
     formData.append('contact', formdata.phone);
+    formData.append('referalCode' , formdata.referalCode)
     formData.append('binary', image);
     setIsSubmitting(true);
     try {
@@ -129,6 +131,19 @@ const CheckoutPage1 = () => {
                 value={formdata.phone}
                 onChange={handleInputChange}
                 required
+              />
+            </div>
+           <div className="mb-4">
+              <label className="block font-bold mb-2" htmlFor="name">
+                Referal Code
+              </label>
+              <input
+                className="w-full px-4 py-2 border rounded-lg"
+                type="text"
+                id="name"
+                name="name"
+                value={formdata.referalCode}
+                onChange={handleInputChange}
               />
             </div>
             <div className="mb-4">
