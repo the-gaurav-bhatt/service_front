@@ -7,7 +7,7 @@ const CheckoutSummary = () => {
       id: 1,
       title: '15 Day Bootcamp on Tech Industry - From Beginner to Intermediate',
       instructor: 'Beginner to Intermediate',
-      image: '/banner.png',
+      image: '/banner.jpeg',
       price: 650,
     },
   ]);
