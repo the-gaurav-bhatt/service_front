@@ -13,7 +13,7 @@ const CallToAction = () => {
   return (
     <div className="flex gap-2">
       <Link href={'/signup'} className={linkStyle + ' p-2'}>
-        Sign In
+        Sign Up
       </Link>
       <Link href={'/login'} className={linkStyle}>
         Login
