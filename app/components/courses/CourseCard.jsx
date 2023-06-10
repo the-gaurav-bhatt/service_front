@@ -14,7 +14,7 @@ const sora = Sora({
 const CourseCard = ({ course }) => {
   return (
     <div className="bg-gradient-to-r from-blue-200 to-purple-200 rounded-lg shadow-lg w-full md:w-1/2   overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
-      <Image
+      <img
         src={course.image}
         fill="responsive"
         alt={course.title}
