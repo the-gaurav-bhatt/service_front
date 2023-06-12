@@ -58,7 +58,7 @@ const CourseTeachers = () => {
     },
     {
       name: 'Prince Singh',
-      position: "India's top 1 Rank at Coding Ninjas ",
+      position: 'All india Rank 1 at Coding Ninjas ',
       intro:
         'Introducing Prince Singh, a coding prodigy with Institute Rank 1 and Global Rank 111 at Gfg. He also holds All India Rank 1 at Coding Ninjas and Global Rank 13 at Interview Bit, showcasing his exceptional skills and expertise in programming and problem-solving.',
 
@@ -71,16 +71,16 @@ const CourseTeachers = () => {
       image: '/profiles/prince.jpeg',
     },
     {
-      name: 'Biplop Karki',
+      name: 'Biplab Karki',
       intro:
-        'Biplop Karki is a versatile freelance developer and serves as the CTO at ClampHook. He has a strong entrepreneurial spirit and holds positions as the CEO at Hyperse.',
+        'Biplab Karki is a versatile freelance developer and serves as the CTO at ClampHook. He has a strong entrepreneurial spirit and holds positions as the CEO at Hyperce.',
       socialMedia: [
         {
           platform: 'LinkedIn',
           url: 'https://www.linkedin.com/in/biplabk123/',
         },
       ],
-      position: 'Freelance Developer | CTO at ClampHook',
+      position: 'Freelancer | CTO at ClampHook',
       qualifications: ['Entrepreneur', 'CTO at ClampHook', 'CEO at Hyperse'],
       image: '/profiles/biplop.jpeg',
     },
