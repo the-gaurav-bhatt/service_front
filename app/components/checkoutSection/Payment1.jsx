@@ -176,11 +176,11 @@ const CheckoutPage1 = () => {
             <h2 className="text-lg font-bold mb-4">Khalti Transfer</h2>
             <div className="mb-4">
               <p className="font-bold">Khalti ID:</p>
-              <p className="text-black">9861875076</p>
+              <p className="text-black">XXXXXXXXXXXX</p>
             </div>
             <div>
               <p className="font-bold">Name:</p>
-              <p className="text-black">Sajan Ghimire</p>
+              <p className="text-black">A+ Pathshala</p>
             </div>
           </div>
           <div className="col-span-1 md:col-span-2 grid grid-cols-1">
@@ -193,11 +193,11 @@ const CheckoutPage1 = () => {
               <h2 className="text-lg font-bold mb-4">Esewa Transfer</h2>
               <div className="mb-4">
                 <p className="font-bold">eSewa ID:</p>
-                <p className="text-black">9861875076</p>
+                <p className="text-black">XXXXXXXXXXXX</p>
               </div>
               <div>
                 <p className="font-bold">Name:</p>
-                <p className="text-black">Sajan Ghimire</p>
+                <p className="text-black">A+ Pathshala</p>
               </div>
             </div>
           </div>
@@ -205,11 +205,11 @@ const CheckoutPage1 = () => {
             <h2 className="text-lg font-bold mb-4">Bank A/C Details</h2>
             <div className="mb-4">
               <p className="font-bold">Account No:</p>
-              <p className="text-black"> 08410017502908</p>
+              <p className="text-black"> 000000000000000 </p>
             </div>
             <div className="mb-4">
               <p className="font-bold">Account Name:</p>
-              <p className="text-black">Sajan Ghimire</p>
+              <p className="text-black">A+ Pathshala</p>
             </div>
             <div>
               <p className="font-bold">Bank:</p>
