@@ -9,10 +9,7 @@ const Footer = () => {
           <div className="w-full lg:w-1/4 md:w-1/2 px-4">
             <h2 className="text-lg text-white font-semibold mb-4">About Us</h2>
             <p className="text-gray-200 text-sm">
-              Co-Workers :
-               Dilli Raj Timalsina ,
-               Sajan Ghimire ,
-               Gaurav Datta Bhatt
+              Developers : Dilli Raj Timalsina , Gaurav Datta Bhatt
             </p>
           </div>
           <div className="w-full lg:w-1/4 md:w-1/2 px-4">
@@ -32,7 +29,7 @@ const Footer = () => {
             <h2 className="text-lg text-white font-semibold mb-4">Contact</h2>
             <p className="text-gray-200">Koteshwar, Kathmandu, Nepal</p>
             <p className="text-gray-200">Email: apluspathshala@gmail.com</p>
-            <p className="text-gray-200">Phone: 9746660482</p>
+            <p className="text-gray-200">Phone: XXXXXXXXXXX</p>
           </div>
           <div className="w-full lg:w-1/4 md:w-1/2 px-4">
             <h2 className="text-lg text-white font-semibold mb-4">
