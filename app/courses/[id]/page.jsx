@@ -8,23 +8,23 @@ import CourseBenefits from '@/app/components/courseConsume/CourseBenefits';
 import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
 
-const getCourse = async (id) => {
-  const res = await fetch(
-    process.env.NEXT_PUBLIC_BACKEND + process.env.NEXT_PUBLIC_COURSEMETA,
-    {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ _id: id }),
-    }
-  );
-  const data = await res.json();
-  return data;
-};
+// const getCourse = async (id) => {
+//   const res = await fetch(
+//     process.env.NEXT_PUBLIC_BACKEND + process.env.NEXT_PUBLIC_COURSEMETA,
+//     {
+//       method: 'POST',
+//       headers: {
+//         'Content-Type': 'application/json',
+//       },
+//       body: JSON.stringify({ _id: id }),
+//     }
+//   );
+//   const data = await res.json();
+//   return data;
+// };
 async function CourseDetail({ params }) {
-  const data = await getCourse('646cc45889de1369e32c43a7');
-  console.log(data);
+  // const data = await getCourse('646cc45889de1369e32c43a7');
+  // console.log(data);
   return (
     <div className={` grid grid-cols-3 `}>
       <div className="lg:ms-8 relative pb-8 col-span-3 px-4 sm:px-6 lg:px-8">

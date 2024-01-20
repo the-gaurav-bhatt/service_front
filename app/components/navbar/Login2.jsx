@@ -36,33 +36,35 @@ const Login2 = () => {
       process.env.NEXT_PUBLIC_BACKEND + process.env.NEXT_PUBLIC_LOGIN
     );
     try {
-      await fetch(
-        process.env.NEXT_PUBLIC_BACKEND + process.env.NEXT_PUBLIC_LOGIN,
-        {
-          method: 'POST',
-          body: JSON.stringify({
-            email,
-            password,
-          }),
-          headers: {
-            'Content-Type': 'application/json',
-          },
-        }
-      )
-        .then((res) => {
-          return res.json();
-        })
-        .then((data) => {
-          if (data.status === 'success') {
-            setCookie(data.token);
-            setUser(data.userProfile);
-            router.back();
-          } else {
-            setLoading(false);
-            setError(true);
-            throw new Error(data);
-          }
-        });
+      setUser({ _id: 'dummyid', haveEnrolled: false, name: 'Dummy Test' });
+
+      // await fetch(
+      //   process.env.NEXT_PUBLIC_BACKEND + process.env.NEXT_PUBLIC_LOGIN,
+      //   {
+      //     method: 'POST',
+      //     body: JSON.stringify({
+      //       email,
+      //       password,
+      //     }),
+      //     headers: {
+      //       'Content-Type': 'application/json',
+      //     },
+      //   }
+      // )
+      //   .then((res) => {
+      //     return res.json();
+      //   })
+      //   .then((data) => {
+      //     if (data.status === 'success') {
+      //       setCookie(data.token);
+      //       setUser(data.userProfile);
+      //       router.back();
+      //     } else {
+      //       setLoading(false);
+      //       setError(true);
+      //       throw new Error(data);
+      //     }
+      //   });
     } catch (error) {
       setLoading(false);
       console.log(error);
@@ -113,34 +115,6 @@ const Login2 = () => {
     router.back();
     // TODO: Handle sign up click
   };
-
-  const handleGoogle = async () => {
-    // try {
-    //   const { code } = await router.push(
-    //     'https://accounts.google.com/o/oauth2/v2/auth?' +
-    //       new URLSearchParams({
-    //         client_id: process.env.GOOGLE_CLIENT_ID,
-    //         redirect_uri: `${process.env.NEXT_PUBLIC_APP_URL}/auth/google/redirect`,
-    //         response_type: 'code',
-    //         scope: 'email profile openid',
-    //       })
-    //   );
-    //   const response = await fetch('/api/auth/google', {
-    //     method: 'POST',
-    //     headers: {
-    //       'Content-Type': 'application/json',
-    //     },
-    //     body: JSON.stringify({ code }),
-    //   });
-    //   const data = await response.json();
-    //   console.log(data);
-    //   // TODO: Handle successful login
-    // } catch (error) {
-    //   console.error(error);
-    // }
-  };
-
-  const handleFacebook = async () => {};
   if (otpInterface) {
     return (
       <OptInterface
@@ -284,19 +258,6 @@ const Login2 = () => {
               {loading ? <BounceSpinners /> : 'Reset Password'}
             </button>
           )}
-
-          {/* <button
-            onClick={handleGoogle}
-            className="bg-red-500 hover:bg-red-700 md:text-sm whitespace-nowrap text-white font-bold py-2 px-4 rounded mb-4"
-          >
-            Log In with Google
-          </button> */}
-          {/* <button
-            onClick={handleFacebook}
-            className="bg-blue-500 hover:bg-blue-700 whitespace-nowrap text-white font-bold py-2 px-4 rounded mb-4"
-          >
-            Log In with Facebook
-          </button> */}
         </div>
       </div>
     </div>

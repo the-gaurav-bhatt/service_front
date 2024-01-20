@@ -1,7 +1,6 @@
 'use client';
 import { userContext } from '@/app/userProvider';
 import { cookieContext } from '@/app/cookieProviders';
-import axios from 'axios';
 import React, { useContext, useState } from 'react';
 import BounceSpinners from '../spinners/BounceSpinners';
 import ErrorMessage from '../spinners/ErrorMessage';
@@ -41,26 +40,26 @@ const CheckoutPage1 = () => {
     formData.append('binary', image);
     setIsSubmitting(true);
     try {
-      const res = await axios.post(
-        process.env.NEXT_PUBLIC_BACKEND + process.env.NEXT_PUBLIC_PAYMENT,
-        formData,
-        {
-          headers: {
-            Authorization: cookie,
-          },
-        }
-      );
+      // const res = await axios.post(
+      //   process.env.NEXT_PUBLIC_BACKEND + process.env.NEXT_PUBLIC_PAYMENT,
+      //   formData,
+      //   {
+      //     headers: {
+      //       Authorization: cookie,
+      //     },
+      //   }
+      // );
       // const data = await res.json();
       // console.log(data);
-      if (res.status === 200) {
-        // console.log(res.data.userProfile);
-        setIsSubmitting(false);
-        setSuccess(true);
-        setUser(res.data.userProfile);
-      } else {
-        setIsSubmitting(false);
-        throw new Error(res.data);
-      }
+      // if (res.status === 200) {
+      // console.log(res.data.userProfile);
+      setIsSubmitting(false);
+      setSuccess(true);
+      setUser({ _id: 'dummyid', haveEnrolled: true, name: 'Dummy Test' });
+      // } else {
+      //   setIsSubmitting(false);
+      //   throw new Error(res.data);
+      // }
     } catch (err) {
       setIsSubmitting(false);
       setError(true);
