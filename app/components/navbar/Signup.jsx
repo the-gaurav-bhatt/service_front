@@ -50,34 +50,34 @@ const Signup = () => {
     console.log('Singup clicked');
 
     try {
-      const response = await fetch(
-        process.env.NEXT_PUBLIC_BACKEND + process.env.NEXT_PUBLIC_SIGNUP,
-        {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            name: username,
-            email: email,
-            password: password,
-            role: role,
-          }),
-        }
-      );
-      // console.log(response.body);
-      if (response.ok) {
-        const data = await response.json();
-        setCookie(data.token);
-        setLoading(false);
-        setUser(data.userProfile);
-        console.log(data);
-        router.back();
-      } else {
-        setLoading(false);
-        setError(true);
-        throw new Error(await response.json());
-      }
+      // const response = await fetch(
+      //   process.env.NEXT_PUBLIC_BACKEND + process.env.NEXT_PUBLIC_SIGNUP,
+      //   {
+      //     method: 'POST',
+      //     headers: {
+      //       'Content-Type': 'application/json',
+      //     },
+      //     body: JSON.stringify({
+      //       name: username,
+      //       email: email,
+      //       password: password,
+      //       role: role,
+      //     }),
+      //   }
+      // );
+      // // console.log(response.body);
+      // if (response.ok) {
+      //   const data = await response.json();
+      //   setCookie(data.token);
+      setLoading(false);
+      setUser({ _id: 'dummyid', haveEnrolled: true, name: 'Dummy Test' });
+
+      router.back();
+      // } else {
+      //   setLoading(false);
+      //   setError(true);
+      //   throw new Error(await response.json());
+      // }
     } catch (error) {
       setLoading(false);
 
